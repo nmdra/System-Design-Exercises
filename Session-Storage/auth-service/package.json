@@ -1,0 +1,13 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "connect-redis": "^8.0.2",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "ioredis": "^4.30.0"
+  }
+}
