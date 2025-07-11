@@ -1,2 +1,2 @@
-> [!INFO]
+> [!NOTE]
 > This Go application demonstrates how to use the `gobreaker` circuit breaker library with structured, colorized logging using `slog` and the `tint` handler. It repeatedly sends HTTP GET requests to a target endpoint (`http://localhost:8081/ping`) and logs successes and failures. If failures exceed a threshold, the circuit breaker opens to prevent further requests temporarily, improving system resilience. This setup is ideal for building fault-tolerant microservices with observability.
