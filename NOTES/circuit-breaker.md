@@ -2,7 +2,7 @@
 
 #SystemDesign 
 
-> [Circuit Breaker Pattern (Design Patterns for Microservices) \| by Hasitha Subhashana \| Geek Culture \| Medium](https://medium.com/geekculture/design-patterns-for-microservices-circuit-breaker-pattern-276249ffab33)
+> [Circuit Breaker Pattern (Design Patterns for Microservices) \| by Hasitha Subhashana \| Geek Culture \| Medium](https://medium.com/geekculture/design-patterns-for-microservices-circuit-breaker-pattern-276249ffab33)   
 > Release It Design and Deploy Production-Ready Software, Chapter 5: Stability Pattern - Michael T. Nygard
 
 Circuit Breakers prevent **Cascading Failures**. (💡Like SQL Cascade)
