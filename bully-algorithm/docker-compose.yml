@@ -1,0 +1,51 @@
+services:
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  node1:
+    build: .
+    environment:
+      - NODE_ID=1
+      - PEERS=1,2,3
+      - REDIS_ADDR=redis:6379
+    depends_on:
+      - redis
+
+  node2:
+    build: .
+    environment:
+      - NODE_ID=2
+      - PEERS=1,2,3
+      - REDIS_ADDR=redis:6379
+    depends_on:
+      - redis
+
+  node3:
+    build: .
+    environment:
+      - NODE_ID=3
+      - PEERS=1,2,3
+      - REDIS_ADDR=redis:6379
+    depends_on:
+      - redis
+
+  node4:
+    build: .
+    environment:
+      - NODE_ID=4
+      - PEERS=1,2,3,4,5
+      - REDIS_ADDR=redis:6379
+    depends_on:
+      - redis
+
+  node5:
+    build: .
+    environment:
+      - NODE_ID=5
+      - PEERS=1,2,3,4,5
+      - REDIS_ADDR=redis:6379
+    depends_on:
+      - redis
