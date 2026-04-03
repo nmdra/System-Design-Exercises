@@ -1,0 +1,3 @@
+[submodule "Outbox-Pattern"]
+	path = Outbox-Pattern
+	url = https://github.com/nmdra/outbox-pattern-go.git
